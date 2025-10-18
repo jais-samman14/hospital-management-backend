@@ -17,13 +17,7 @@ const PORT = process.env.PORT || 5005;
 // Middleware
 
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'http://localhost:1234', 
-    'https://your-app-name.netlify.app',
-    'https://*.netlify.app',
-    'https://*.railway.app'
-  ],
+  origin: "*", // Sabhi domains allow karega
   credentials: true
 }));
 
